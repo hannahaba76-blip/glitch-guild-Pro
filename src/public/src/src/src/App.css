@@ -1,0 +1,57 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f1117 0%, #1a1d29 100%);
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  min-height: calc(100vh - 70px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00a2ff, #8a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-content p {
+  color: #8f9bba;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Post Card */
+.post-card {
+  background: rgba(26, 29, 41, 0.8);
+  border: 1px solid #2d3348;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.post-card h3 {
+  color: #00a2ff;
+  margin-bottom: 0.5rem;
+}
+
+.post-card p {
+  color: #8f9bba;
+  margin-bottom: 0;
+}
