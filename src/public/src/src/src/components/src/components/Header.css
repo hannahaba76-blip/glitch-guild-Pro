@@ -1,0 +1,63 @@
+.header {
+  background: rgba(26, 29, 41, 0.95);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #2d3348;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  color: #8f9bba;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.menu-btn:hover {
+  background: rgba(0, 162, 255, 0.1);
+  color: #00a2ff;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #00a2ff;
+}
+
+.tagline {
+  color: #8f9bba;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.action-btn, .user-avatar {
+  background: transparent;
+  border: 1px solid #2d3348;
+  color: #8f9bba;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.action-btn:hover, .user-avatar:hover {
+  border-color: #00a2ff;
+  color: #00a2ff;
+}
