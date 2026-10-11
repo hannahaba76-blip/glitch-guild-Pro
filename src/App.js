@@ -4,7 +4,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 
-// Components
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Feed from './pages/Feed';
@@ -12,16 +11,11 @@ import Profile from './pages/Profile';
 import GameHub from './pages/GameHub';
 import ChatBox from './components/ChatBox';
 
-// Theme
 const theme = createTheme({
   palette: {
     mode: 'dark',
-    primary: {
-      main: '#00a2ff',
-    },
-    secondary: {
-      main: '#8a2be2',
-    },
+    primary: { main: '#00a2ff' },
+    secondary: { main: '#8a2be2' },
     background: {
       default: '#0f1117',
       paper: '#1a1d29',
@@ -34,9 +28,7 @@ const theme = createTheme({
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
   },
-  shape: {
-    borderRadius: 12,
-  },
+  shape: { borderRadius: 12 },
 });
 
 function App() {
@@ -49,10 +41,13 @@ function App() {
       <Router>
         <Box sx={{ display: 'flex', minHeight: '100vh', bgcolor: 'background.default' }}>
           <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
-          
+
           <Box sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-            <Header onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
-            
+            <Header
+              onMenuClick={() => setSidebarOpen((prev) => !prev)}
+              onChatClick={() => setChatOpen((prev) => !prev)}
+            />
+
             <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
               <Routes>
                 <Route path="/" element={<Feed />} />
